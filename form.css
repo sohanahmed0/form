@@ -13,3 +13,79 @@ body {
   text-align: center;
   font-size: 16px;
 }
+
+.form-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 10px;
+  background: #833471;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  transition: transform 200ms ease-in-out;
+  animation: bounce 2000ms ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.main-form {
+  width: 100%;
+  padding: 15px;
+}
+
+.main-form h2 {
+  margin-bottom: 15px;
+  color: #EE5A24;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.input-area {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.input-area label {
+  display: block;
+  text-align: left;
+  padding: 5px 8px;
+  font-size: 18px;
+  color: #EE5A24;
+  text-transform: capitalize;
+}
+
+.input-area input {
+  padding: 10px 0;
+  background: transparent;
+  border-radius: 12px;
+  border: 2px solid #EE5A24;
+}
+.input-area input:focus {
+  outline: none;
+}
+::placeholder {
+  padding: 0 15px;
+  text-transform: capitalize;
+  color: #009432;
+}
+
+.btn-area {
+  margin-top: 10px;
+}
+
+.btn-area input[type="submit"] {
+  padding: 15px 50px;
+  border: none;
+  background: #EE5A24;
+  color: #fff;
+  text-transform: capitalize;
+  
+}
